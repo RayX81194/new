@@ -21,11 +21,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div>
+    <div className='w-full flex px-5 md:px-10 my-8 items-center justify-between'>
       <div>
-        <p>
+        <p className={`font-medium text-md`}>
           {time.hr.toString().padStart(2, '0')} : {time.min.toString().padStart(2, '0')}
         </p>
+      </div>
+      <div>
+        <h2 className='font-regular text-lg text-blue-500'>Resume {`>`}</h2>
       </div>
     </div>
   );
